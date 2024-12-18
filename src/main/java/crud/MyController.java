@@ -27,7 +27,8 @@ public class MyController {
 
     public List<Integer> getLottoNumbers() {
 
-        List<Integer> numbers = IntStream.rangeClosed(1, 45).boxed()
+        List<Integer> numbers = IntStream.rangeClosed(1, 45)
+                .boxed()
                 .collect(Collectors.toList());
 
         Collections.shuffle(numbers);
